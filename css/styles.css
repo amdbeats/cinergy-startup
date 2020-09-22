@@ -133,7 +133,7 @@ body {
 
 .feature-elm {
   line-height: 1.5rem;
-  padding: 5%;
+  padding: 3%;
   text-align: center;
 }
 
@@ -298,7 +298,7 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #2d4654;
+    color: #000;
     margin-bottom: 50px;
     font-weight: bold;
 }
