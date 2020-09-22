@@ -19,7 +19,6 @@ body {
   padding: 3% 15% 7%;
 }
 
-
 #title {
   color: #1b262c;
   text-align: left;
@@ -148,7 +147,7 @@ body {
   font-weight: lighter;
   color: #8f8f8f;
   text-align: center;
-    padding: 0 15%;
+  padding: 0 15%;
 }
 
 .feature-icon {
@@ -260,6 +259,7 @@ body {
 
 #footer {
   padding: 2%;
+  text-align: center;
 }
 
 .footer-logo {
