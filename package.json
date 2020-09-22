@@ -1,0 +1,11 @@
+{
+  "name": "cinergy-starting-page",
+  "version": "1.0.0",
+  "description": "TinDog Starting Files",
+  "main": "form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
