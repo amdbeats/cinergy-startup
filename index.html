@@ -35,7 +35,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="form.js"></script>
 
-<link rel="icon" href="images/cinergy.ico">
+  <link rel="icon" href="images/cinergy.ico">
 
 </head>
 
@@ -58,7 +58,7 @@
               <a class="nav-link" href="#testimonials">Sign Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">Contact</a>
+              <a class="nav-link" href="#fs-frm">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#team">Team</a>
@@ -74,7 +74,8 @@
           <h1 class="big-heading">Become a part of the new era of independent media projects.</h1>
           <!-- <button type="button" class="btn btn-danger download-btn highlight"><a class="link-button" href="https://cinergy-signup.herokuapp.com">Sign Up</a></button> -->
           <a class="link-button" href="https://cinergy-signup.herokuapp.com" target="_blank"><button type="button" class="btn btn-danger download-btn highlight">Sign Up</button></a>
-          <button type="button" class="btn btn-outline-light download-btn" href="#cta"> Contact</button>
+          <a href="#cta"><button type="button" class="btn btn-outline-light download-btn"> Contact</button></a>
+
         </div>
         <div class="col-lg-6 col-s-12">
           <img class="title-img" src="images/cinergy.png" alt="cinergy-logo">
@@ -83,7 +84,7 @@
     </div>
   </section>
 
-<!-- Our Mission -->
+  <!-- Our Mission -->
 
   <section class="white-section" id="features2">
     <div class="row">
@@ -100,7 +101,7 @@
       <div class="col-md-6 col-sm-6 col-xs-12 feature-elm">
         <i class="feature-icon fas fa-user-friends fa-4x"></i>
         <h3 class="feature-ttl">International</h3>
-        <p class="feature-txt">Crew media craft can be done remotely, and we believe diversified projects formed by worldwide people can be interesting.</p>
+        <p class="feature-txt">Crew media craft can be done remotely, and we believe diversified projects formed by worldwide people can lead to a new era of media projects.</p>
       </div>
   </section>
 
@@ -267,54 +268,87 @@
       <div class="contact-image">
         <img src="images/cinergylogo.png" alt="cinergy-logo" />
       </div>
-      <form action="https://formspree.io/mqkgkkje" method="POST">
-      <!-- <form action="mailto:albertomatesanz10@gmail.com" method="POST" enctype="text/plain"> -->
-        <h3>Drop Us a Message</h3>
-        <div class="row form">
-          <div class="col-md-6">
+
+      <div class="form">
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mqkgkkje" method="post">
+  <h3>Drop Us a Message</h3>
+          <fieldset id="fs-frm-inputs">
             <div class="form-group">
-              <input type="text" name="name" class="form-control subject" placeholder="Subject *" value="" />
+              <label for="full-name">Full Name</label>
+              <input class="form-control subject" type="text" name="name" id="full-name" placeholder="First and Last" required="">
             </div>
+
             <div class="form-group">
-              <input type="email" name="_replyto" class="form-control email" placeholder="Your Email *" value="" />
+              <label for="email-address">Email Address</label>
+              <input class="form-control email" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="@">
+
             </div>
+
             <div class="form-group">
-              <input type="submit" name="btnSubmit" class="btnContact submit" value="Send" />
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="message" class="form-control message"
+                placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+
             </div>
-            <div class="form-group status">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <textarea name="message" class="form-control message" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-            </div>
-          </div>
-        </div>
-      </form>
+
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
+          </fieldset>
+          <input class="btnContact submit" type="submit" value="Submit">
+
+        </form>
+      </div>
     </div>
   </section>
 
-<section>
-  <div class="">
-    <form
-  action="https://formspree.io/mqkgkkje"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
 
-  <!-- your other form fields go here -->
 
-  <button type="submit">Send</button>
-</form>
+
+  <!-- <div class="form">
+    <form action="https://formspree.io/mqkgkkje" method="POST">
+      <label>
+        Your email:
+        <input type="text" name="_replyto">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+
+      <!-your other form fields go here
+
+      <button type="submit">Send</button>
+    </form>
   </div>
-</section>
+  </section>
+
+  <!- <form action="mailto:albertomatesanz10@gmail.com" method="POST" enctype="text/plain">
+  <h3>Drop Us a Message</h3>
+  <div class="row form">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control subject" placeholder="Subject *" value="" />
+      </div>
+      <div class="form-group">
+        <input type="email" name="_replyto" class="form-control email" placeholder="Your Email *" value="" />
+      </div>
+      <div class="form-group">
+        <input type="submit" name="btnSubmit" class="btnContact submit" value="Send" />
+      </div>
+      <div class="form-group status">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <textarea name="message" class="form-control message" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+      </div>
+    </div>
+  </div>
+  </form>
+  </div>
+  </section> -->
+
+
 
   <!-- Footer -->
 
