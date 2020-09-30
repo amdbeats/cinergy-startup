@@ -43,9 +43,13 @@ body {
     text-align: center;
   }
 
-  .title-img {
-    position: static;
-    transform: rotate(0);
+
+}
+
+@media only screen and (max-width: 1028px) {
+
+  [class*="title-img"] {
+    display: none;
   }
 }
 
@@ -104,9 +108,9 @@ body {
 /* Title Image */
 
 .title-img {
-  position: absolute;
+  position: relative;
   width: 70%;
-  right: 10%;
+  left: 20%;
 }
 
 .title-img2 {
